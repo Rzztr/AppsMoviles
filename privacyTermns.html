@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consentimiento de Datos - Ghost prISM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+    <div class="login-container">
+        <h1>Privacidad</h1>
+        <p>Aviso y consentimiento de uso de datos personales</p>
+
+        <div class="card" style="text-align: left; margin-bottom: 1.5rem; max-height: 250px; overflow-y: auto;">
+            <h3 style="color: var(--primary);">Términos y Condiciones</h3>
+            <p style="font-size: 0.85rem; color: var(--text);">
+                En cumplimiento con la normativa de protección de datos, <strong>Ghost prISM</strong> le informa que los datos recolectados (incluyendo direcciones MAC, registros de red y actividad del sistema) serán utilizados exclusivamente para:
+            </p>
+            <ul style="font-size: 0.85rem; color: var(--text-light); padding-left: 1rem; margin: 1rem 0;">
+                <li>Monitoreo de seguridad en tiempo real.</li>
+                <li>Generación de reportes de diagnóstico.</li>
+                <li>Optimización del rendimiento del Dashboard.</li>
+            </ul>
+            <p style="font-size: 0.85rem; color: var(--text);">
+                Al hacer clic en "Aceptar", usted confirma que es mayor de edad y autoriza el tratamiento de su información técnica bajo nuestros protocolos de cifrado de grado militar.
+            </p>
+        </div>
+
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 1.5rem; text-align: left;">
+            <input type="checkbox" id="consent" style="width: 20px; height: 20px; margin: 0; cursor: pointer;">
+            <label for="consent" style="font-size: 0.9rem; color: var(--text-light);">
+                He leído y acepto la <a href="#" style="color: var(--primary); text-decoration: none;">Política de Privacidad</a> y el uso de cookies técnicas.
+            </label>
+        </div>
+
+        <button class="btn-primary" id="btn-accept">ACEPTAR Y CONTINUAR</button>
+        <button class="btn-danger" style="background: transparent; border: 1px solid var(--danger); margin-top: 0.5rem;">DECLINAR</button>
+        
+        <div class="user-info" style="border: none; margin-top: 1rem;">
+            <span class="badge warning">Sesión Encriptada AES-256</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Ejemplo simple de validación
+    document.getElementById('btn-accept').addEventListener('click', function() {
+        const checkbox = document.getElementById('consent');
+        if (checkbox.checked) {
+            alert('Acceso concedido al sistema Ghost prISM');
+            
+        } else {
+            alert('Debe marcar la casilla de consentimiento para continuar.');
+        }
+    });
+</script>
+
+</body>
+</html>

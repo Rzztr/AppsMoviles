@@ -1,0 +1,19 @@
+{
+  "name": "ghostprism",
+  "version": "1.0.1",
+  "description": "some description",
+  "keywords": [
+    "prism",
+    "pwa"
+  ],
+  "license": "MIT",
+  "author": "Ricardo Reyes - vaquero 1-1",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
